@@ -11,6 +11,17 @@ namespace GOL_1
         public int Width { get; set; }
         public int Heigth { get; set; }
 
+        public Grid()
+        {
+            rows = new List<Row>();
+        }
+
+        public void Init(int x, int y)
+        {
+            Width = x;
+            Heigth = y;
+        }
+
         public void SetCell(int x, int y, bool newState)
         {
 
@@ -24,6 +35,10 @@ namespace GOL_1
 
     public class Row
     {
+        public Row()
+        {
+            cells = new List<Cell>();
+        }
         public List<Cell> cells; 
     }
 
