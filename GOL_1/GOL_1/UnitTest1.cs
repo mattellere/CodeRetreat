@@ -6,12 +6,19 @@ namespace GOL_1
 {
     public class Grid
     {
+        public List<Row> rows;
+
         public int Width { get; set; }
         public int Heigth { get; set; }
 
-        public Cell GetCell(Row x, int y)
+        public void SetCell(int x, int y, bool newState)
         {
 
+        }
+
+        public Cell GetCell(Row x, int y)
+        {
+            return 
         }
     }
 
