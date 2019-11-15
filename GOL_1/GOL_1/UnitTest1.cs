@@ -27,9 +27,9 @@ namespace GOL_1
 
         }
 
-        public Cell GetCell(Row x, int y)
+        public Cell GetCell(int x, int y)
         {
-            return 
+            return rows[x].cells[y];
         }
     }
 
